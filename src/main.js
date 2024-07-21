@@ -19,7 +19,7 @@ const myApp = createApp(App);
 
 myApp.use(Quasar, {
   config: {
-    dark: "light" /* look at QuasarConfOptions from the API card */,
+    dark: false /* look at QuasarConfOptions from the API card */,
   },
   plugins: {}, // import Quasar plugins and add here
 });
