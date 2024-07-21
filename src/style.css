@@ -1,0 +1,217 @@
+@import './quasar-variables.scss';
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: inherit;
+  transition: color 0.25s;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+  /* background-color: var(--background); */
+  color: var(--text);
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+
+.q-card {
+  padding: 2em;
+  background-color: var(--card-bg) !important;
+  color: var(--card-text) !important;
+  border-radius: 8px;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.q-card:hover {
+  background-color: none;
+  color: none;
+}
+
+
+.q-btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-bg) !important;
+  color: var(--button-text) !important;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.q-btn:hover {
+  background-color: var(--button-hover-bg) !important;
+  color: var(--button-hover-text) !important;
+}
+
+.q-btn:focus,
+.q-btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  /* padding: 2rem; */
+}
+
+/* Font: Syne */
+@font-face {
+  font-family: font;
+  src: url(@/assets/fonts/font.ttf);
+}
+
+.my-font {
+  font-family: 'font';
+}
+
+.toolbar {
+  background-color: var(--toolbar-bg);
+  color: var(--toolbar-text);
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.page-a {
+  padding: 4rem;
+  min-height: 100vh !important;
+  background-color: var(--background-a) !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.page-b {
+  padding: 4rem;
+  min-height: 100vh !important;
+  background-color: var(--background-b) !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.q-page-container {
+  padding: 0 !important;
+}
+
+.q-page {
+  padding: 0 !important;
+}
+
+.intro-name {
+  color: var(--text);
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.tech-chip-a {
+  background-color: var(--chip-a-bg) !important;
+  color: var(--text) !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.tech-chip-b {
+  background-color: var(--chip-b-bg) !important;
+  color: var(--text) !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 4em !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.q-card-section {
+  flex-grow: 1;
+}
+
+.card-actions {
+  margin-top: auto;
+}
+
+.image-project {
+  border-radius: 2em 2em 0 0 !important;
+}
+
+.project-icon {
+  background-color: var(--chip-a-bg) !important;
+  border-radius: 100px;
+  color: var(--text-a) !important;
+  font-size: 3em !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.text-a {
+  color: var(--text-a) !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.project-icon-sm {
+  background-color: var(--chip-a-bg) !important;
+  color: var(--text-a) !important;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.project-icon-sm:hover {
+  background-color: var(--button-hover-bg) !important;
+  color: var(--button-hover-text) !important;
+}
+
+.github-icon {
+  border-radius: 100px;
+  padding: 2px;
+}
+
+.open-icon {
+  border-radius: 5px;
+  padding: 1px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.header-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-input {
+  background-color: var(--input-bg) !important;
+  color: var(--input-text) !important;
+  transition: background-color 0.25s, color 0.25s;
+  border-radius: 2em !important;
+}
+.icon-message {
+  font-size: 10rem;
+}

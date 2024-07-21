@@ -1,0 +1,101 @@
+:root {
+  --color-teal-2: #80cbc4;
+  --color-teal-4: #46b0a5;
+  --color-teal-6: #00796b;
+  --color-teal-8: #004d40;
+  --color-teal-10:#294747;
+
+  --primary: #1976D2;
+  --secondary: #26A69A;
+  --accent: #9C27B0;
+
+  --positive: #21BA45;
+  --negative: #C10015;
+  --info: #31CCEC;
+  --warning: #F2C037;
+
+  --primary-dark: #1565C0;
+  --secondary-dark: #1E8E78;
+  --accent-dark: #7B1FA2;
+
+  --positive-dark: #1B8E3E;
+  --negative-dark: #A30013;
+  --info-dark: #2587A5;
+  --warning-dark: #C4901E;
+
+  --background-light: #def2f1;
+  --background-a-light: #def2f1;
+  --background-b-light: #3aafa9;
+  --text-light: #222222;
+  --text-a-light: #2b7a78;
+  --button-bg-light: #3aafa9;
+  --button-text-light: #090909;
+  --button-hover-bg-light: #2b7a78;
+  --button-hover-text-light: #e5e5e5;
+  --card-bg-light: #def2f1;
+  --card-text-light: #090909;
+  --input-bg-light: #acdddb;
+  --input-text-light: #090909;
+  --chip-a-bg-light: var(--color-teal-2);
+  --chip-b-bg-light: var(--color-teal-4);
+  --toolbar-bg-light: #3aafa9;
+  --toolbar-text-light: #090909;
+
+  --background-dark: #17252a;
+  --background-a-dark: #17252a;
+  --background-b-dark: #2b7a78;
+  --text-dark: #e5e5e5;
+  --text-a-dark: var(--color-teal-2);;
+  --button-bg-dark: #2b7a78;
+  --button-text-dark: #e5e5e5;
+  --button-hover-bg-dark: #3aafa9;
+  --button-hover-text-dark: #090909;
+  --card-bg-dark: #17252a;
+  --card-text-dark: #3aafa9;
+  --input-bg-dark: var(--color-teal-10);
+  --input-text-dark: #e5e5e5;
+  --chip-a-bg-dark: var(--color-teal-6);
+  --chip-b-bg-dark: var(--color-teal-8);
+  --toolbar-bg-dark: #2b7a78;
+  --toolbar-text-dark: #e5e5e5;
+}
+
+[data-theme='light'] {
+  --background: var(--background-light);
+  --background-a: var(--background-a-light);
+  --background-b: var(--background-b-light);
+  --text: var(--text-light);
+  --text-a: var(--text-a-light);
+  --button-bg: var(--button-bg-light);
+  --button-text: var(--button-text-light);
+  --button-hover-bg: var(--button-hover-bg-light);
+  --button-hover-text: var(--button-hover-text-light);
+  --card-bg: var(--card-bg-light);
+  --card-text: var(--card-text-light);
+  --input-bg: var(--input-bg-light);
+  --input-text: var(--input-text-light);
+  --chip-a-bg: var(--chip-a-bg-light);
+  --chip-b-bg: var(--chip-b-bg-light);
+  --toolbar-bg: var(--toolbar-bg-light);
+  --toolbar-text: var(--toolbar-text-light);
+}
+
+[data-theme='dark'] {
+  --background: var(--background-dark);
+  --background-a: var(--background-a-dark);
+  --background-b: var(--background-b-dark);
+  --text: var(--text-dark);
+  --text-a: var(--text-a-dark);
+  --button-bg: var(--button-bg-dark);
+  --button-text: var(--button-text-dark);
+  --button-hover-bg: var(--button-hover-bg-dark);
+  --button-hover-text: var(--button-hover-text-dark);
+  --card-bg: var(--card-bg-dark);
+  --card-text: var(--card-text-dark);
+  --input-bg: var(--input-bg-dark);
+  --input-text: var(--input-text-dark);
+  --chip-a-bg: var(--chip-a-bg-dark);
+  --chip-b-bg: var(--chip-b-bg-dark);
+  --toolbar-bg: var(--toolbar-bg-dark);
+  --toolbar-text: var(--toolbar-text-dark);
+}
