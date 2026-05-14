@@ -23,9 +23,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /* Removed the flex centering to allow normal scrolling and full width */
+  display: block; 
   min-width: 320px;
   min-height: 100vh;
   /* background-color: var(--background); */
@@ -43,8 +42,8 @@ body {
 }
 
 .q-card:hover {
-  background-color: none;
-  color: none;
+  background-color: transparent; /* fixed invalid 'none' */
+  color: inherit; /* fixed invalid 'none' */
 }
 
 
@@ -72,7 +71,8 @@ body {
 }
 
 #app {
-  max-width: 1280px;
+  /* Changed max-width to allow the site to span big screens completely */
+  width: 100%;
   margin: 0 auto;
   /* padding: 2rem; */
 }
