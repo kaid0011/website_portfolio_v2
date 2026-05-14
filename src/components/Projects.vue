@@ -1,47 +1,78 @@
 <template>
   <section id="projects" class="page-b">
-    <h2 class="text-center text-uppercase text-bold">Projects</h2>
+    <h2 class="text-center text-uppercase text-bold q-mb-xl">Projects</h2>
     <div class="projects-grid">
       <q-card
         v-for="project in projects"
         :key="project.title"
-        class="project-card"
+        class="project-card shadow-2"
       >
-        <!-- <q-img :src="project.image" class="image-project" height="200px"/> -->
-        <q-card-section class="">
-          <div class="text-a header-wrapper card-header">
+        <q-card-section class="q-pb-none">
+          <div class="text-a header-wrapper card-header text-caption text-bold text-uppercase">
             {{ project.stack }}
           </div>
         </q-card-section>
-        <q-card-section>
+        
+        <q-card-section class="flex-grow">
           <q-icon
-            class="fa-regular fa-folder-open project-icon q-mb-md"
+            class="fa-regular fa-folder-open project-icon q-mb-md q-pa-sm"
           ></q-icon>
           <div class="text-h6 text-bold intro-name">{{ project.title }}</div>
-          <q-separator class="q-my-sm bg-teal" width="60%" />
-          <div class="text-body1">{{ project.description }}</div>
+          <q-separator class="q-my-sm bg-teal" width="40%" />
+          <div class="text-body2 text-b">{{ project.description }}</div>
         </q-card-section>
-        <q-card-section>
-          <div class="text-caption"></div>
-        </q-card-section>
-        <q-card-actions align="right" class="card-actions q-gutter-x-sm">
-          <q-icon
-          name="fab fa-github"
-          size="30px"
-          @click="viewProject(project.link)"
-          class="project-icon-sm github-icon"
-        />
-        <q-icon
-        name="fa-solid fa-square-arrow-up-right"
-        size="30px"
-        @click=""
-        class="project-icon-sm open-icon"
-      />
+
+        <q-card-actions align="right" class="q-pb-lg q-pr-lg q-gutter-x-sm">
+          <q-btn
+            flat
+            round
+            icon="fab fa-github"
+            @click="viewProject(project.link)"
+            class="project-btn"
+          />
+          <q-btn
+            flat
+            round
+            icon="fa-solid fa-square-arrow-up-right"
+            @click=""
+            class="project-btn"
+          />
         </q-card-actions>
       </q-card>
     </div>
   </section>
 </template>
+
+<style scoped>
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
+  border-radius: 24px !important;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.flex-grow {
+  flex-grow: 1;
+}
+.project-icon {
+  font-size: 2.5rem;
+  color: var(--text-a);
+}
+.project-btn {
+  color: var(--text-a);
+  background: var(--chip-a-bg) !important;
+}
+</style>
 
 <script setup>
 import { ref } from "vue";

@@ -171,6 +171,16 @@ body {
   transition: background-color 0.25s, color 0.25s;
 }
 
+.text-b {
+  color: var(--text-b) !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.text-c {
+  color: var(--text-c) !important;
+  transition: background-color 0.25s, color 0.25s;
+}
+
 .project-icon-sm {
   background-color: var(--chip-a-bg) !important;
   color: var(--text-a) !important;

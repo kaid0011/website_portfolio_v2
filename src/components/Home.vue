@@ -7,7 +7,7 @@
       <div class="text-a text-h6 text-bold text-uppercase">
         Software Engineer
       </div>
-      <div class="text-body1 q-mt-lg">
+      <div class="text-body1 text-b q-mt-lg">
         Welcome to my world! I am a dedicated software engineer with a focus on
         Vue.js development. My mission is to create efficient management systems
         that streamline operations and enhance productivity. With a passion for

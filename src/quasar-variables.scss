@@ -28,6 +28,8 @@
   --background-b-light: #3aafa9;
   --text-light: #222222;
   --text-a-light: #2b7a78;
+  --text-b-light: #222222;
+  --text-c-light: #004b44;
   --button-bg-light: #3aafa9;
   --button-text-light: #090909;
   --button-hover-bg-light: #2b7a78;
@@ -45,7 +47,9 @@
   --background-a-dark: #17252a;
   --background-b-dark: #2b7a78;
   --text-dark: #e5e5e5;
-  --text-a-dark: var(--color-teal-2);;
+  --text-a-dark: var(--color-teal-2);
+  --text-b-dark: #b9b9b9;
+  --text-c-dark: var(--color-teal-2);
   --button-bg-dark: #2b7a78;
   --button-text-dark: #e5e5e5;
   --button-hover-bg-dark: #3aafa9;
@@ -66,6 +70,8 @@
   --background-b: var(--background-b-light);
   --text: var(--text-light);
   --text-a: var(--text-a-light);
+  --text-b: var(--text-b-light);
+  --text-c: var(--text-c-light);
   --button-bg: var(--button-bg-light);
   --button-text: var(--button-text-light);
   --button-hover-bg: var(--button-hover-bg-light);
@@ -86,6 +92,8 @@
   --background-b: var(--background-b-dark);
   --text: var(--text-dark);
   --text-a: var(--text-a-dark);
+  --text-b: var(--text-b-dark);
+  --text-c: var(--text-c-dark);
   --button-bg: var(--button-bg-dark);
   --button-text: var(--button-text-dark);
   --button-hover-bg: var(--button-hover-bg-dark);
